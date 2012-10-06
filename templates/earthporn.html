@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EarthPorn</title>
+  <meta name="description" content="Images grabbed from reddit.com/r/earthporn">
+  <meta name="author" content="Justin Steele">
+  <style type="text/css">
+  	img {
+  		max-width: 100%;
+  	}
+  </style>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+{% for img in images %}
+	<p>
+		<a href="{{ img }}">
+			<img src="{{ img }}" />
+		</a>
+	</p>
+{% endfor %}
+</body>
+</html>
