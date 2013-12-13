@@ -7,7 +7,7 @@ app = Flask(__name__)
 def earthporn():
 	r = requests.get('http://www.reddit.com/r/earthporn/new.json?sort=new')
 	images = []
-	for post in r.json['data']['children']:
+	for post in r.json()['data']['children']:
 		if post['data']['domain'] == 'i.imgur.com':
 			images.append(post['data']['url'])
 	return render_template('earthporn.html', images=images)
