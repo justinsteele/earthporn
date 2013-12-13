@@ -1,4 +1,4 @@
 earthporn
 =========
 
-Feed of r/earthporn images
+Simplistic view of imgur.com photos posted to r/earthporn.
